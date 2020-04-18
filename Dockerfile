@@ -5,7 +5,7 @@ RUN for i in $(seq 1 5); do apt-get update && break; done; \
 
 ADD fonts /fonts
 #ADD emoji /emoji
-ADD mapbot /mapbot
+ADD . /mapbot
 ADD run.sh /run.sh
 
 CMD ["/run.sh"]
